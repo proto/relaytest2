@@ -1,0 +1,29 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><comment id="h]MrK(XkU{3ElR-^#4dz" x="812" y="-26" h="537" w="314">water pump manual test.
+A -&gt; open
+B -&gt; close
+
+battery 9v
+relay 5v
+
+
+Microbit / Realy pins 
+
+3v      --- &gt;   +
+GND  --- &gt;   -
+P0      --- &gt;  S
+
+
+Relay / PUMP / BATT
+
+NC      --- &gt;   BATT +
+MID     --- &gt;   PUMP +
+NO ------------------------
+
+Connect Negative to BATT - / PUMP -
+(black cable)</comment><block type="device_button_event" id="]4rp^q7Om!36Pt?:1}Pj" x="379" y="-45"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_set_digital_pin" id="?LhVie%~lc`qe7QzrL:."><field name="name">DigitalPin.P0</field><value name="value"><shadow type="math_number_minmax" id="!]Xk!~ky!K8gu.1G]gB#"><mutation min="0" max="1" label="Number" precision="0"></mutation><field name="SLIDER">1</field></shadow></value><next><block type="basic_show_icon" id="lXE}%Ra1%4T63zefHHjY"><field name="i">IconNames.Chessboard</field><next><block type="device_pause" id=")HBPPJk}).X@?eo)t,`~"><value name="pause"><shadow type="timePicker" id="2,WubtwRwypB1B7]g~Jh"><field name="ms">500</field></shadow></value><next><block type="device_clear_display" id="?(p8ywtLp!@Lk3gR-F;u"></block></next></block></next></block></next></block></statement></block><block type="pxt-on-start" id="e7_y0A)0ffwGt)U*hV7t" x="0" y="0"><statement name="HANDLER"><block type="device_set_brightness" id="i,0itI}3OFmqATB-A@~$"><value name="value"><shadow type="math_number_minmax" id="%70V{AxVctJxdF@E*5{6"><mutation min="0" max="255" label="Value" precision="0"></mutation><field name="SLIDER">20</field></shadow></value><next><block type="device_show_leds" id="had?2kG(tg2Lu+_Fv!Xn"><field name="LEDS">`
+        . . # . . 
+        . . . . . 
+        . . # . . 
+        . . . . . 
+        # . . . #
+        `</field><next><block type="device_pause" id="$3|5y[Ci+rGV~]:2Lmd8"><value name="pause"><shadow type="timePicker" id="jkh%=`,JoDWH2U8I2vGC"><field name="ms">2000</field></shadow></value><next><block type="basic_show_icon" id="@mDNI]x_N2P:7`m#1qy;"><field name="i">IconNames.Heart</field><next><block type="device_clear_display" id="iS.ZDh%ijp~ESn@eg7YL"><next><block type="device_set_digital_pin" id="BiH.J%J9iUkRHm8o,e9}"><field name="name">DigitalPin.P0</field><value name="value"><shadow type="math_number_minmax" id="ZpuC2jff!r!31KiSaO0^"><mutation min="0" max="1" label="Number" precision="0"></mutation><field name="SLIDER">0</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="(D_s9/5GOTaUL(+]I2_e" x="389" y="267"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="device_set_digital_pin" id="Gt)*qK_yrB}*4?JM]v,U"><field name="name">DigitalPin.P0</field><value name="value"><shadow type="math_number_minmax" id="G{2,~GbG7@q[b]j!Vi26"><mutation min="0" max="1" label="Value" precision="0"></mutation><field name="SLIDER">0</field></shadow></value><next><block type="basic_show_icon" id="~j:RTiqv6sZdxC}@dt|k"><field name="i">IconNames.Ghost</field><next><block type="device_pause" id="J-tYvs{fI|i0B0u]GkUR"><value name="pause"><shadow type="timePicker" id="hfc]`4kCncURbUr~-UF]"><field name="ms">500</field></shadow></value><next><block type="device_clear_display" id="z$E7f.,a]!!lW|7lMJ(M"></block></next></block></next></block></next></block></statement></block></xml>
